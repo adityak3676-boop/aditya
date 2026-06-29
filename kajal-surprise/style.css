@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe1ec, #e7d7ff, #d7f7ff);
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 28px;
+  padding: 35px 25px;
+  box-shadow: 0 20px 45px rgba(100, 70, 120, 0.2);
+  animation: floatIn 0.9s ease;
+}
+
+.tag {
+  color: #8b5cf6;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin: 12px 0;
+  font-size: 3rem;
+  color: #db2777;
+}
+
+.message {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 14px 24px;
+  background: #db2777;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(219, 39, 119, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(219, 39, 119, 0.3);
+}
+
+#surpriseBox {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff0f7;
+  color: #555;
+  animation: pop 0.5s ease;
+}
+
+#surpriseBox h2 {
+  color: #be185d;
+  margin-bottom: 10px;
+}
+
+.hearts {
+  font-size: 1.8rem;
+  margin-top: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
