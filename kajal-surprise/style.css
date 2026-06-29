@@ -10,37 +10,60 @@ body {
   align-items: center;
   justify-content: center;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ffe1ec, #e7d7ff, #d7f7ff);
+  background: radial-gradient(circle at top, #fff7fb, #ffe1ec, #e7d7ff, #d7f7ff);
   padding: 20px;
+  overflow-x: hidden;
 }
 
 .card {
   width: 100%;
-  max-width: 420px;
+  max-width: 430px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 28px;
-  padding: 35px 25px;
-  box-shadow: 0 20px 45px rgba(100, 70, 120, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  padding: 30px 24px;
+  box-shadow: 0 24px 55px rgba(100, 70, 120, 0.22);
   animation: floatIn 0.9s ease;
+  border: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 .tag {
   color: #8b5cf6;
   font-weight: bold;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.82rem;
 }
 
 h1 {
-  margin: 12px 0;
+  margin: 10px 0 16px;
   font-size: 3rem;
   color: #db2777;
+}
+
+.photo-frame {
+  width: 210px;
+  height: 210px;
+  margin: 0 auto 18px;
+  padding: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fb7185, #c084fc, #67e8f9);
+  box-shadow: 0 15px 30px rgba(219, 39, 119, 0.22);
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 5px solid white;
 }
 
 .message {
   color: #444;
   line-height: 1.6;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 button {
@@ -63,7 +86,7 @@ button:hover {
 #surpriseBox {
   margin-top: 25px;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 22px;
   background: #fff0f7;
   color: #555;
   animation: pop 0.5s ease;
@@ -72,6 +95,12 @@ button:hover {
 #surpriseBox h2 {
   color: #be185d;
   margin-bottom: 10px;
+}
+
+.special-line {
+  margin-top: 10px;
+  color: #be185d;
+  font-weight: bold;
 }
 
 .hearts {
